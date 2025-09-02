@@ -6,7 +6,7 @@ const randomContainer = document.getElementById("fetchRandom");
 const getFoodByRandom = async function(){
   try{
     mainBody.style.display= "none";
-     randomContainer.innerHTML ="Loading...";
+     randomContainer.innerHTML =`<p class ="text-white m-10 md:m-6">Loading...</p>`;
 
   const food = await fetch(`https://www.themealdb.com/api/json/v1/1/random.php
 `);
